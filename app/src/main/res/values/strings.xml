@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Orgonizer1</string>
+    <string name="password">Пароль</string>
+    <string name="user_name">Имя пользователя</string>
+    <string name="sign_in">Войти</string>
+    <string name="spisok_del">Список дел</string>
+    <string name="new_zd">Добавить задачу</string>
+</resources>

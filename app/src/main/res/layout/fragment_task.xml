@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greenfon">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавить заметку"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:layout_gravity="center"></TextView>
+
+        <ImageButton
+            android:id="@+id/back_to_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/greenfon"
+            android:layout_marginLeft="65dp"
+            android:src="@drawable/str"
+            android:onClick="backlist"></ImageButton>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/title_task"
+        android:layout_width="312dp"
+        android:layout_height="32dp"
+        android:background="@drawable/angles_two"
+        android:layout_gravity="center"
+        android:layout_marginTop="55dp"
+        android:padding="5dp"
+        android:hint="Заголовок задачи"></EditText>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+        <EditText
+            android:id="@+id/time_task"
+            android:layout_width="148dp"
+            android:layout_height="32dp"
+            android:background="@drawable/angles_two"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            android:inputType="time"
+            android:hint="⏰   12:30"></EditText>
+        <EditText
+            android:id="@+id/date_task"
+            android:layout_width="148dp"
+            android:layout_height="32dp"
+            android:background="@drawable/angles_two"
+            android:inputType="date"
+            android:padding="5dp"
+            android:hint="📅   10.12.10"></EditText>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/desc_task"
+        android:layout_width="312dp"
+        android:layout_height="96dp"
+        android:background="@drawable/angles_two"
+        android:layout_gravity="center"
+        android:gravity="start"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:hint="Описание задачи"></EditText>
+
+    <Button
+        android:id="@+id/add_tasks"
+        android:layout_width="312dp"
+        android:layout_height="48dp"
+        android:background="@drawable/angles"
+        android:text="Cохранить"
+        android:layout_gravity="center"
+        android:layout_marginTop="196dp"
+        android:onClick="zap"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textAllCaps="false"></Button>
+    <Button
+        android:id="@+id/delete_tasks"
+        android:layout_width="312dp"
+        android:layout_height="48dp"
+        android:background="@drawable/angles_four"
+        android:text="Удалить"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:onClick="del"
+        android:textAllCaps="false"></Button>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greenfon"
+    android:id="@+id/fragment_container">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spisok_del"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:layout_gravity="center">
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/back_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/greenfon"
+            android:layout_marginLeft="125dp"
+            android:onClick="sighup"
+            android:src="@drawable/avatar">
+
+        </ImageButton>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/task_recycler_view"
+        android:layout_width="338dp"
+        android:layout_height="430dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        tools:listitem="@layout/list_item_task" />
+
+    <Button
+        android:id="@+id/add_task"
+        android:layout_width="312dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/angles"
+        android:gravity="center"
+        android:onClick="adds"
+        android:text="Добавить задачу"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"></Button>
+
+</LinearLayout>
